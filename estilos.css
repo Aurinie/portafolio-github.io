@@ -1,0 +1,283 @@
+* {
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   color: white;
+   text-align: center;
+}
+
+body {
+   background-image: url('BackGround.PNG');
+   background-repeat: no-repeat;
+   background-size: 100%;    
+}
+
+h1 { 
+   font-size: 500%;
+   color: rgb(255, 255, 255);
+   text-align: center;
+   margin-top: 8%;
+   margin-bottom: 8%;
+   text-shadow: 5px 5px 2px rgb(12, 25, 215);
+   display: flex, center;
+   text-decoration-line: overline;
+
+}
+
+#myname {
+   color: rgb(0, 249, 145);
+   text-shadow: 2px 2px color;
+   margin-top: -5%;
+   margin-bottom: 7%;
+   font-size: 300%;
+   
+}
+
+.Texto {
+font-family: 'Times New Roman', Times, serif;
+font-size: 160%;
+display: inline-block;
+border: 40% solid rgb(5%, 0, 0);
+padding: 10px;
+margin: 30px auto;
+border-radius: 5px;
+margin-top: -3%;
+background-color: rgba(197, 115, 245, 0.902);
+border-style: groove;
+}
+
+
+.Big-container {
+   background-color: #faf9d859;
+   display: inline-block, 50%;
+   justify-content: center;
+   align-items: center;
+   margin: 1rem;
+   width: auto;
+   height: auto;
+   padding: 2rem;
+}
+
+
+.social-container {
+   display: flex; /* Usa Flexbox para alinear los elementos */
+   align-items: flex-end; /* Alinea los elementos al fondo del contenedor */
+   justify-content: flex-start; /* Alinea los elementos al inicio del contenedor (a la izquierda) */
+   gap: 1rem; /* Espacio entre el ícono y el texto */
+   padding: 1rem; /* Espaciado interno del contenedor */
+   position: relative; /* Para que el ícono pueda estar posicionado en la parte inferior */
+ }
+ 
+ /* Estilo para el ícono social */
+ .social-icon {
+   width: 2.5rem; /* Tamaño del ícono usando rem para escalabilidad */
+   height: 2.5rem; /* Tamaño del ícono usando rem para escalabilidad */
+   display: block; /* Mostrar el ícono como bloque */
+   transition: transform 0.3s ease; /* Transición suave para el efecto hover */
+   position: absolute; /* Permite que el ícono se posicione en la parte inferior */
+   bottom: 0; /* Posiciona el ícono en la parte inferior del contenedor */
+ }
+ 
+ /* Estilo para el texto con id "contacto" */
+ #contacto {
+   background-color: rgba(17, 17, 220, 0.7); /* Fondo azul oscuro con transparencia */
+   color: #fff; /* Color del texto blanco */
+   padding: 0.5rem 1rem; /* Espaciado interno del texto */
+   border-radius: 0.5rem; /* Bordes redondeados */
+   font-size: 1rem; /* Tamaño del texto */
+   display: flex; /* Usa Flexbox para centrar el texto */
+   align-items: center; /* Centra verticalmente el texto */
+   justify-content: center; /* Centra horizontalmente el texto */
+ }
+
+
+#T1 {
+  color: rgb(255, 2, 179);
+  font-size: 20px;
+  text-shadow:  -1px 1px 0 #011a05;
+ 
+}
+
+.atractivo {
+   color: #08f300; /* Color Verde llamativo */
+   font-weight: bold;
+   text-size-adjust: 30px;
+   text-shadow:  -1px 1px 0 #011a05;
+  
+}
+
+/* Para dispositivos móviles (hasta 767px de ancho) */
+@media (max-width: 47.9375em) { /* 47.9375em = 767px */
+   h1 {
+     font-size: 1.5rem; /* Reduce el tamaño de la fuente en móviles */
+   }
+ 
+   h2 {
+     font-size: 1.2rem; /* Reduce el tamaño de la fuente en móviles */
+   }
+ 
+   .Texto p {
+     font-size: 0.9rem; /* Reduce el tamaño de la fuente en móviles */
+   }
+ 
+  
+ 
+   .social-icon {
+      width: 2rem; /* Tamaño reducido del ícono en móviles */
+      height: 2rem; /* Tamaño reducido del ícono en móviles */
+    }
+    #contacto {
+      font-size: 0.875rem; /* Tamaño del texto reducido en móviles */
+    }
+  }
+  .big-container {
+   padding: 1rem; /* Reduce el padding en móviles */
+   border-width: 1px; /* Reduce el grosor del borde en móviles */
+ }
+
+
+
+ /* Para tabletas (768px a 991px de ancho) */
+@media (min-width: 48em) and (max-width: 61.9375em) { /* 48em = 768px, 61.9375em = 991px */
+   h1 {
+     font-size: 1.8rem; /* Ajusta el tamaño de la fuente para tabletas */
+   }
+ 
+   h2 {
+     font-size: 1.4rem; /* Ajusta el tamaño de la fuente para tabletas */
+   }
+ 
+   .Texto p {
+     font-size: 1rem; /* Ajusta el tamaño de la fuente para tabletas */
+   }
+ 
+ 
+   .social-icon {
+      width: 2.2rem; /* Tamaño ajustado del ícono para tabletas */
+      height: 2.2rem; /* Tamaño ajustado del ícono para tabletas */
+    }
+    #contacto {
+      font-size: 0.95rem; /* Tamaño del texto ajustado para tabletas */
+    }
+  }
+
+  .big-container {
+   padding: 1.5rem; /* Ajusta el padding para tabletas */
+   border-width: 1.5px; /* Ajusta el grosor del borde para tabletas */
+ }
+
+
+/* Para pantallas grandes (992px en adelante) */
+@media (min-width: 62em) { /* 62em = 992px */
+   h1 {
+     font-size: 2rem; /* Tamaño de fuente para pantallas grandes */
+   }
+ 
+   h2 {
+     font-size: 1.5rem; /* Tamaño de fuente para pantallas grandes */
+   }
+ 
+   .Texto p {
+     font-size: 1.1rem; /* Tamaño de fuente estándar para pantallas grandes */
+   }
+
+ 
+   .social-icon {
+      width: 2.5rem; /* Tamaño del ícono en pantallas grandes */
+      height: 2.5rem; /* Tamaño del ícono en pantallas grandes */
+    }
+    #contacto {
+      font-size: 1rem; /* Tamaño del texto en pantallas grandes */
+    }
+  }
+ 
+  .big-container {
+   padding: 2rem; /* Mantiene el padding en pantallas grandes */
+   border-width: 2px; /* Mantiene el grosor del borde en pantallas grandes */
+ }
+
+ .navbar {
+   background-color: #333; /* Color de fondo de la barra de navegación */
+   color: white; /* Color del texto */
+   padding: 0.5rem 1rem; /* Espaciado interno */
+   position: fixed; /* Fija la barra al top */
+   width: 100%; /* Ancho completo */
+   top: 0; /* Alineado al top */
+   z-index: 1000; /* Asegura que la barra esté sobre otros elementos */
+ }
+ 
+ /* Contenedor de la barra de navegación */
+ .navbar-container {
+   display: flex; /* Usa Flexbox para alinear los elementos */
+   justify-content: space-between; /* Espacia los elementos a los extremos */
+   align-items: center; /* Alinea los elementos verticalmente */
+ }
+ 
+ /* Logo de la barra de navegación */
+ .navbar-logo {
+   color: white; /* Color del texto del logo */
+   text-decoration: none; /* Elimina el subrayado */
+   font-size: 1.5rem; /* Tamaño del texto del logo */
+   font-weight: bold; /* Fuente en negrita */
+ }
+ 
+ /* Enlaces del menú de navegación */
+ .navbar-menu {
+   list-style: none; /* Elimina los puntos de la lista */
+   margin: 0; /* Elimina el margen */
+   padding: 0; /* Elimina el padding */
+   display: flex; /* Usa Flexbox para alinear los elementos del menú */
+ }
+ 
+ .navbar-menu li {
+   margin: 0 1rem; /* Espacio entre los enlaces */
+ }
+ 
+ .navbar-menu a {
+   color: white; /* Color del texto de los enlaces */
+   text-decoration: none; /* Elimina el subrayado */
+   font-size: 1rem; /* Tamaño del texto de los enlaces */
+ }
+ 
+ .navbar-menu a:hover {
+   text-decoration: underline; /* Subraya el enlace al pasar el ratón */
+ }
+ 
+ /* Botón de alternar en pantallas pequeñas */
+ .navbar-toggle {
+   display: none; /* Oculta el botón por defecto */
+   background: none; /* Sin fondo */
+   border: none; /* Sin borde */
+   color: white; /* Color del texto del botón */
+   font-size: 1.5rem; /* Tamaño del texto del botón */
+ }
+ 
+ /* Media Queries para la barra de navegación */
+ 
+ @media (max-width: 767px) { /* Ajusta para pantallas pequeñas */
+   .navbar-menu {
+     display: none; /* Oculta el menú por defecto en pantallas pequeñas */
+     flex-direction: column; /* Cambia la dirección del menú a columna */
+     width: 100%; /* Ancho completo */
+     background-color: #333; /* Color de fondo del menú */
+     position: absolute; /* Posiciona el menú de manera absoluta */
+     top: 100%; /* Coloca el menú justo debajo de la barra de navegación */
+     left: 0; /* Alineado a la izquierda */
+   }
+ 
+   .navbar-menu.show {
+     display: flex; /* Muestra el menú cuando se añade la clase 'show' */
+   }
+ 
+   .navbar-toggle {
+     display: block; /* Muestra el botón en pantallas pequeñas */
+   }
+ 
+   .navbar-menu li {
+     margin: 0; /* Elimina el margen entre los elementos del menú */
+   }
+ 
+   .navbar-menu a {
+     padding: 1rem; /* Añade espaciado alrededor de los enlaces */
+     border-bottom: 1px solid #444; /* Añade una línea separadora */
+     text-align: center; /* Centra el texto de los enlaces */
+   }
+ }
